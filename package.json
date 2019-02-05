@@ -2,12 +2,14 @@
   "name": "ng-dynamic",
   "version": "0.0.0",
   "scripts": {
+    "01_release": "ng build --prod --stats-json --build-optimizer --vendor-chunk=true",
+    "02_bundle-report": "webpack-bundle-analyzer dist/ng-dynamic/stats.json",
+    "03_start": "ng serve --open",
+    "04_e2e": "ng e2e",
+    "05_test": "ng test",
+    "06_lint": "ng lint",
     "ng": "ng",
-    "start": "ng serve --open",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
+    "debug": "ng build"
   },
   "private": true,
   "dependencies": {
@@ -44,6 +46,7 @@
     "ts-node": "~8.0.2",
     "tslint": "~5.12.1",
     "tslint-eslint-rules": "~5.4.0",
-    "typescript": "~3.2.4"
+    "typescript": "~3.2.4",
+    "webpack-bundle-analyzer": "~3.0.3"
   }
 }
