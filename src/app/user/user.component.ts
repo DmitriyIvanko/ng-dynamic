@@ -5,4 +5,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./user.component.scss'],
   templateUrl: './user.component.html',
 })
-export class UserComponent { }
+export class UserComponent {
+
+  public data = 'TEST DATA';
+
+  public onShow(value: string): void {
+    alert(value);
+  }
+}

@@ -21,4 +21,4 @@ const routes: Routes = [
     RouterModule.forChild(routes),
   ],
 })
-export class LayoutRoutingModule { }
+export class SignInRoutingModule { }
