@@ -20,6 +20,9 @@
           "options": {
             "outputPath": "dist/ng-dynamic",
             "index": "src/index.html",
+            "lazyModules": [
+              "src/app/user/foobar-one/foobar-one.module"
+            ],
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.app.json",
