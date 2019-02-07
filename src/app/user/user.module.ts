@@ -21,6 +21,6 @@ import { UserComponent } from './user.component';
       provide: NgModuleFactoryLoader,
       useClass: SystemJsNgModuleLoader,
     },
-  ]
+  ],
 })
 export class UserModule { }

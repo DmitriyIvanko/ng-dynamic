@@ -1,17 +1,17 @@
 import {
   EventEmitter,
-  Type,
   InjectionToken,
+  Type,
 } from '@angular/core';
 
 export interface PluginComponent {
-  data: Object;
+  data: object;
   show: EventEmitter<string>;
 }
 
 export interface Plugin {
-  name: string;
   component: Type<PluginComponent>;
+  name: string;
 }
 
 export const widgetsToken = new InjectionToken<Plugin>('widgets');

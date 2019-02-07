@@ -35,7 +35,7 @@ export class UserComponent implements OnDestroy, OnInit {
   @ViewChild('vc', { read: ViewContainerRef })
   public vc: ViewContainerRef;
 
-  private activeComponentRefDictionary: Object = {};
+  private activeComponentRefDictionary = {};
 
   constructor(
     private injector: Injector,
@@ -86,7 +86,7 @@ export class UserComponent implements OnDestroy, OnInit {
 
       const widgets = module.injector.get(widgetsToken);
       const cmpFactory = cfr.resolveComponentFactory(widgets.component);
-      let componentRef: ComponentRef<any> = this.vc.createComponent(cmpFactory);
+      const componentRef: ComponentRef<any> = this.vc.createComponent(cmpFactory);
       componentRef.instance.data = this.data;
       this.subscription.add(componentRef.instance.show.subscribe((data) => {
         this.onShow(data);

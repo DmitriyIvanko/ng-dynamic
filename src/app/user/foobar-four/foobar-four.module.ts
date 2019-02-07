@@ -14,8 +14,8 @@ import { FoobarFourComponent } from './foobar-four.component';
     {
       provide: widgetsToken,
       useValue: {
-        name: 'plugin-cmp',
         component: FoobarFourComponent,
+        name: 'plugin-cmp',
       },
     },
   ],

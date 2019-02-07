@@ -14,8 +14,8 @@ import { FoobarTwoComponent } from './foobar-two.component';
     {
       provide: widgetsToken,
       useValue: {
-        name: 'plugin-cmp',
         component: FoobarTwoComponent,
+        name: 'plugin-cmp',
       },
     },
   ],

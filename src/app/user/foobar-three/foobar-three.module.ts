@@ -14,8 +14,8 @@ import { FoobarThreeComponent } from './foobar-three.component';
     {
       provide: widgetsToken,
       useValue: {
-        name: 'plugin-cmp',
         component: FoobarThreeComponent,
+        name: 'plugin-cmp',
       },
     },
   ],
