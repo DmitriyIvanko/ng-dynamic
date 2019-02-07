@@ -6,13 +6,15 @@ import {
   Output,
 } from '@angular/core';
 
+import { PluginComponent } from 'user-core';
+
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
   selector: 'ngd-foobar-five',
   styleUrls: ['./foobar-five.component.scss'],
   templateUrl: './foobar-five.component.html',
 })
-export class FoobarFiveComponent {
+export class FoobarFiveComponent implements PluginComponent {
 
   @Input()
   public data: string;

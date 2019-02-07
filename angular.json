@@ -21,7 +21,11 @@
             "outputPath": "dist/ng-dynamic",
             "index": "src/index.html",
             "lazyModules": [
-              "src/app/user/foobar-one/foobar-one.module"
+              "src/app/user/foobar-one/foobar-one.module",
+              "src/app/user/foobar-two/foobar-two.module",
+              "src/app/user/foobar-three/foobar-three.module",
+              "src/app/user/foobar-four/foobar-four.module",
+              "src/app/user/foobar-five/foobar-five.module"
             ],
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",

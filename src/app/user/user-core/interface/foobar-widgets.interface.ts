@@ -6,7 +6,7 @@ import {
 
 export interface PluginComponent {
   data: Object;
-  // show: EventEmitter<string>;
+  show: EventEmitter<string>;
 }
 
 export interface Plugin {
@@ -15,3 +15,9 @@ export interface Plugin {
 }
 
 export const widgetsToken = new InjectionToken<Plugin>('widgets');
+
+export interface FoobarModel {
+  id: string;
+  name: string;
+  src: string;
+}

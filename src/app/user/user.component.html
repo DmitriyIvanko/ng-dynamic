@@ -4,4 +4,11 @@
 <button [routerLink]="'/sign-in'">
  SIGN OUT
 </button>
+<div *ngFor="let foobar of foobarList; trackBy: identify">
+  <input type="checkbox"
+         [checked]="isSelected(foobar)"
+         [id]="foobar.id"
+         (change)="onSelect(foobar)">
+  <label [for]="foobar.id">{{ foobar.name }}</label>
+</div>
 <div #vc></div>

@@ -14,7 +14,7 @@ import { PluginComponent } from 'user-core';
   styleUrls: ['./foobar-one.component.scss'],
   templateUrl: './foobar-one.component.html',
 })
-export class FoobarOneComponent {
+export class FoobarOneComponent implements PluginComponent {
 
   @Input()
   public data: string;
