@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 
+import { widgetsToken } from 'user-core';
 import { FoobarOneComponent } from './foobar-one.component';
 
 @NgModule({
@@ -11,7 +12,7 @@ import { FoobarOneComponent } from './foobar-one.component';
   ],
   providers: [
     {
-      provide: 'widgets',
+      provide: widgetsToken,
       useValue: {
         name: 'plugin-cmp',
         component: FoobarOneComponent,

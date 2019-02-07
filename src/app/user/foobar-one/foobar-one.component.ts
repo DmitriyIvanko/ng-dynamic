@@ -6,6 +6,8 @@ import {
   Output,
 } from '@angular/core';
 
+import { PluginComponent } from 'user-core';
+
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
   selector: 'ngd-foobar-one',
